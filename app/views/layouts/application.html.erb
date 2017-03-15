@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootcont</title>
+    <title>Johnson Store</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,9 +16,13 @@
     </div>
     <ul class="nav navbar-nav">
       <li><a href="/">Home</a></li>
-      <li><a href="line_items">Store</a></li>
-      <li><a href="/carts">Carts</a></li>
-      <li><a href="#"></a></li>
+      <li><%= link_to 'Products', products_path %></li>
+      <li><a href="/carts">Cart</a></li>
+      <li><a href="line_items">Line Items</a></li>
+      <li><%= link_to 'Orders', orders_path %></li>
+      <li><%= link_to 'Users', users_path %></li>
+      <li><a href="/login">Login</a></li>
+      <li><%= button_to 'L***n', login_path, method: :create , class:"btn btn-default" %></li>
     </ul>
   
     </nav>

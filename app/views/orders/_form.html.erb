@@ -26,8 +26,9 @@
     <%= f.text_field :email , class:"form-control" %>
   </div>
 
-<div class="form-group">
+  <div class="form-group">
     <%= f.label :pay_type %>
+    
     <%= f.select :pay_type, Order.pay_types.keys, prompt: 'Select a payment method',  class:"form-control"   %>
   </div>
 

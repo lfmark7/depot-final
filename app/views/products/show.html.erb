@@ -2,7 +2,7 @@
 
 <div class="panel panel-default">
 
-<div class="panel-header">product</div>
+<div class="panel-heading">product</div>
 
 <div class="panel-body">
 
@@ -16,13 +16,12 @@
 <p>
   <strong>Description:</strong>
   <%= strip_tags(@product.description) %>
-  <%= @product.description %>
 </p>
 
 
 <p>
   <strong>Image url:</strong>
-  <%= @product.image_url %>
+  <%= image_tag(@product.image_url) %>
 </p>
 
 
@@ -36,7 +35,7 @@
 
 <div class="panel-footer">
 
-<%= link_to 'Edit', edit_product_path(@product) ,class:"btn btn-xs btn-warning" %> |
+<%= link_to 'Edit', edit_product_path(@product) ,class:"btn btn-xs btn-danger" %> |
 <%= link_to 'Back', products_path , class:"btn btn-xs btn-danger" %>
 
 </div></div>
